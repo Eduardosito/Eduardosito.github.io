@@ -109,136 +109,136 @@ $(document).ready(function(){
     };
 
     //mayor es mejor
-    var razonesRapidas       = [{empresa: "Empresa 1", valor: $("#RRE1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RRE2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RRE3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RRE4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RRE5In").val()} ];
+    var razonesRapidas       = [{empresa: $("#nEmp1").val(), valor: $("#RRE1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RRE2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RRE3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RRE4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RRE5In").val()} ];
     // mayor es mejor
-    var pruebasAcidos        = [{empresa: "Empresa 1", valor: $("#PA1In").val() }, 
-                                {empresa: "Empresa 2", valor: $("#PA2In").val() } , 
-                                {empresa: "Empresa 3", valor: $("#PA3In").val() } , 
-                                {empresa: "Empresa 4", valor: $("#PA4In").val() } ,
-                                {empresa: "Empresa 5", valor: $("#PA5In").val() } ];
+    var pruebasAcidos        = [{empresa: $("#nEmp1").val(), valor: $("#PA1In").val() }, 
+                                {empresa: $("#nEmp2").val(), valor: $("#PA2In").val() } , 
+                                {empresa: $("#nEmp3").val(), valor: $("#PA3In").val() } , 
+                                {empresa: $("#nEmp4").val(), valor: $("#PA4In").val() } ,
+                                {empresa: $("#nEmp5").val(), valor: $("#PA5In").val() } ];
     // mayor es mejor 
-    var rDeudaTotal          = [{empresa: "Empresa 1", valor: $("#RDT1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RDT2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RDT3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RDT4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RDT5In").val()} ];
+    var rDeudaTotal          = [{empresa: $("#nEmp1").val(), valor: $("#RDT1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RDT2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RDT3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RDT4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RDT5In").val()} ];
     // mayor es mejor
-    var rotInteresGanado     = [{empresa: "Empresa 1", valor: $("#RIG1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RIG2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RIG3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RIG4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RIG5In").val()} ];
+    var rotInteresGanado     = [{empresa: $("#nEmp1").val(), valor: $("#RIG1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RIG2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RIG3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RIG4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RIG5In").val()} ];
     // mayor es mejor
-    var rotInventario        = [{empresa: "Empresa 1", valor: $("#RI1In").val() }, 
-                                {empresa: "Empresa 2", valor: $("#RI2In").val() } , 
-                                {empresa: "Empresa 3", valor: $("#RI3In").val() } , 
-                                {empresa: "Empresa 4", valor: $("#RI4In").val() } ,
-                                {empresa: "Empresa 5", valor: $("#RI5In").val() } ];
+    var rotInventario        = [{empresa: $("#nEmp1").val(), valor: $("#RI1In").val() }, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RI2In").val() } , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RI3In").val() } , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RI4In").val() } ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RI5In").val() } ];
     // menor es mejor
-    var periodoPromCobranzas = [{empresa: "Empresa 1", valor: $("#PPC1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#PPC2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#PPC3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#PPC4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#PPC5In").val()} ];
+    var periodoPromCobranzas = [{empresa: $("#nEmp1").val(), valor: $("#PPC1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#PPC2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#PPC3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#PPC4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#PPC5In").val()} ];
     //mayor es mejor
-    var rotActivoTotal       = [{empresa: "Empresa 1", valor: $("#RAT1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RAT2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RAT3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RAT4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RAT5In").val()} ];
+    var rotActivoTotal       = [{empresa: $("#nEmp1").val(), valor: $("#RAT1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RAT2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RAT3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RAT4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RAT5In").val()} ];
     //mayor es mejor
-    var margenUtilidad       = [{empresa: "Empresa 1", valor: $("#MU1In").val() }, 
-                                {empresa: "Empresa 2", valor: $("#MU2In").val() } , 
-                                {empresa: "Empresa 3", valor: $("#MU3In").val() } , 
-                                {empresa: "Empresa 4", valor: $("#MU4In").val() } ,
-                                {empresa: "Empresa 5", valor: $("#MU5In").val() } ];
+    var margenUtilidad       = [{empresa: $("#nEmp1").val(), valor: $("#MU1In").val() }, 
+                                {empresa: $("#nEmp2").val(), valor: $("#MU2In").val() } , 
+                                {empresa: $("#nEmp3").val(), valor: $("#MU3In").val() } , 
+                                {empresa: $("#nEmp4").val(), valor: $("#MU4In").val() } ,
+                                {empresa: $("#nEmp5").val(), valor: $("#MU5In").val() } ];
     //mayor es mejor
-    var rendSobreActivos     = [{empresa: "Empresa 1", valor: $("#RSA1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RSA2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RSA3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RSA4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RSA5In").val()} ];
+    var rendSobreActivos     = [{empresa: $("#nEmp1").val(), valor: $("#RSA1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RSA2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RSA3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RSA4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RSA5In").val()} ];
     //mayor es mejor
-    var rendSobreCapital     = [{empresa: "Empresa 1", valor: $("#RSC1In").val()}, 
-                                {empresa: "Empresa 2", valor: $("#RSC2In").val()} , 
-                                {empresa: "Empresa 3", valor: $("#RSC3In").val()} , 
-                                {empresa: "Empresa 4", valor: $("#RSC4In").val()} ,
-                                {empresa: "Empresa 5", valor: $("#RSC5In").val()} ];
+    var rendSobreCapital     = [{empresa: $("#nEmp1").val(), valor: $("#RSC1In").val()}, 
+                                {empresa: $("#nEmp2").val(), valor: $("#RSC2In").val()} , 
+                                {empresa: $("#nEmp3").val(), valor: $("#RSC3In").val()} , 
+                                {empresa: $("#nEmp4").val(), valor: $("#RSC4In").val()} ,
+                                {empresa: $("#nEmp5").val(), valor: $("#RSC5In").val()} ];
 
     
     var razonesRapidasTop = razonesRapidas.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RRETop1").html(razonesRapidasTop[4]["empresa"]);
-    $("#RRETop2").html(razonesRapidasTop[3]["empresa"]);
-    $("#RRETop3").html(razonesRapidasTop[2]["empresa"]);
-    $("#RRETop4").html(razonesRapidasTop[1]["empresa"]);
-    $("#RRETop5").html(razonesRapidasTop[0]["empresa"]);
+    $("#RRETop1").html(razonesRapidasTop[4]["empresa"].toUpperCase());
+    $("#RRETop2").html(razonesRapidasTop[3]["empresa"].toUpperCase());
+    $("#RRETop3").html(razonesRapidasTop[2]["empresa"].toUpperCase());
+    $("#RRETop4").html(razonesRapidasTop[1]["empresa"].toUpperCase());
+    $("#RRETop5").html(razonesRapidasTop[0]["empresa"].toUpperCase());
 
     var pruebasAcidosTop = pruebasAcidos.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#PATop1").html(pruebasAcidosTop[4]["empresa"]);
-    $("#PATop2").html(pruebasAcidosTop[3]["empresa"]);
-    $("#PATop3").html(pruebasAcidosTop[2]["empresa"]);
-    $("#PATop4").html(pruebasAcidosTop[1]["empresa"]);
-    $("#PATop5").html(pruebasAcidosTop[0]["empresa"]);
+    $("#PATop1").html(pruebasAcidosTop[4]["empresa"].toUpperCase());
+    $("#PATop2").html(pruebasAcidosTop[3]["empresa"].toUpperCase());
+    $("#PATop3").html(pruebasAcidosTop[2]["empresa"].toUpperCase());
+    $("#PATop4").html(pruebasAcidosTop[1]["empresa"].toUpperCase());
+    $("#PATop5").html(pruebasAcidosTop[0]["empresa"].toUpperCase());
 
     var rDeudaTotalTop = rDeudaTotal.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RDTTop1").html(rDeudaTotalTop[4]["empresa"]);
-    $("#RDTTop2").html(rDeudaTotalTop[3]["empresa"]);
-    $("#RDTTop3").html(rDeudaTotalTop[2]["empresa"]);
-    $("#RDTTop4").html(rDeudaTotalTop[1]["empresa"]);
-    $("#RDTTop5").html(rDeudaTotalTop[0]["empresa"]);
+    $("#RDTTop1").html(rDeudaTotalTop[4]["empresa"].toUpperCase());
+    $("#RDTTop2").html(rDeudaTotalTop[3]["empresa"].toUpperCase());
+    $("#RDTTop3").html(rDeudaTotalTop[2]["empresa"].toUpperCase());
+    $("#RDTTop4").html(rDeudaTotalTop[1]["empresa"].toUpperCase());
+    $("#RDTTop5").html(rDeudaTotalTop[0]["empresa"].toUpperCase());
 
     var rotInteresGanadoTop = rotInteresGanado.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RIGTop1").html(rotInteresGanadoTop[4]["empresa"]);
-    $("#RIGTop2").html(rotInteresGanadoTop[3]["empresa"]);
-    $("#RIGTop3").html(rotInteresGanadoTop[2]["empresa"]);
-    $("#RIGTop4").html(rotInteresGanadoTop[1]["empresa"]);
-    $("#RIGTop5").html(rotInteresGanadoTop[0]["empresa"]);
+    $("#RIGTop1").html(rotInteresGanadoTop[4]["empresa"].toUpperCase());
+    $("#RIGTop2").html(rotInteresGanadoTop[3]["empresa"].toUpperCase());
+    $("#RIGTop3").html(rotInteresGanadoTop[2]["empresa"].toUpperCase());
+    $("#RIGTop4").html(rotInteresGanadoTop[1]["empresa"].toUpperCase());
+    $("#RIGTop5").html(rotInteresGanadoTop[0]["empresa"].toUpperCase());
 
     var rotInventarioTop = rotInventario.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RITop1").html(rotInventarioTop[4]["empresa"]);
-    $("#RITop2").html(rotInventarioTop[3]["empresa"]);
-    $("#RITop3").html(rotInventarioTop[2]["empresa"]);
-    $("#RITop4").html(rotInventarioTop[1]["empresa"]);
-    $("#RITop5").html(rotInventarioTop[0]["empresa"]);
+    $("#RITop1").html(rotInventarioTop[4]["empresa"].toUpperCase());
+    $("#RITop2").html(rotInventarioTop[3]["empresa"].toUpperCase());
+    $("#RITop3").html(rotInventarioTop[2]["empresa"].toUpperCase());
+    $("#RITop4").html(rotInventarioTop[1]["empresa"].toUpperCase());
+    $("#RITop5").html(rotInventarioTop[0]["empresa"].toUpperCase());
 
     var periodoPromCobranzasTop = periodoPromCobranzas.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#PPCTop1").html(periodoPromCobranzasTop[0]["empresa"]);
-    $("#PPCTop2").html(periodoPromCobranzasTop[1]["empresa"]);
-    $("#PPCTop3").html(periodoPromCobranzasTop[2]["empresa"]);
-    $("#PPCTop4").html(periodoPromCobranzasTop[3]["empresa"]);
-    $("#PPCTop5").html(periodoPromCobranzasTop[4]["empresa"]);
+    $("#PPCTop1").html(periodoPromCobranzasTop[0]["empresa"].toUpperCase());
+    $("#PPCTop2").html(periodoPromCobranzasTop[1]["empresa"].toUpperCase());
+    $("#PPCTop3").html(periodoPromCobranzasTop[2]["empresa"].toUpperCase());
+    $("#PPCTop4").html(periodoPromCobranzasTop[3]["empresa"].toUpperCase());
+    $("#PPCTop5").html(periodoPromCobranzasTop[4]["empresa"].toUpperCase());
 
     var rotActivoTotalTop = rotActivoTotal.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RATTop1").html(rotActivoTotalTop[4]["empresa"]);
-    $("#RATTop2").html(rotActivoTotalTop[3]["empresa"]);
-    $("#RATTop3").html(rotActivoTotalTop[2]["empresa"]);
-    $("#RATTop4").html(rotActivoTotalTop[1]["empresa"]);
-    $("#RATTop5").html(rotActivoTotalTop[0]["empresa"]);
+    $("#RATTop1").html(rotActivoTotalTop[4]["empresa"].toUpperCase());
+    $("#RATTop2").html(rotActivoTotalTop[3]["empresa"].toUpperCase());
+    $("#RATTop3").html(rotActivoTotalTop[2]["empresa"].toUpperCase());
+    $("#RATTop4").html(rotActivoTotalTop[1]["empresa"].toUpperCase());
+    $("#RATTop5").html(rotActivoTotalTop[0]["empresa"].toUpperCase());
 
     var margenUtilidadTop = margenUtilidad.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#MUTop1").html(margenUtilidadTop[4]["empresa"]);
-    $("#MUTop2").html(margenUtilidadTop[3]["empresa"]);
-    $("#MUTop3").html(margenUtilidadTop[2]["empresa"]);
-    $("#MUTop4").html(margenUtilidadTop[1]["empresa"]);
-    $("#MUTop5").html(margenUtilidadTop[0]["empresa"]);
+    $("#MUTop1").html(margenUtilidadTop[4]["empresa"].toUpperCase());
+    $("#MUTop2").html(margenUtilidadTop[3]["empresa"].toUpperCase());
+    $("#MUTop3").html(margenUtilidadTop[2]["empresa"].toUpperCase());
+    $("#MUTop4").html(margenUtilidadTop[1]["empresa"].toUpperCase());
+    $("#MUTop5").html(margenUtilidadTop[0]["empresa"].toUpperCase());
 
     var rendSobreActivosTop = rendSobreActivos.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RSATop1").html(rendSobreActivosTop[4]["empresa"]);
-    $("#RSATop2").html(rendSobreActivosTop[3]["empresa"]);
-    $("#RSATop3").html(rendSobreActivosTop[2]["empresa"]);
-    $("#RSATop4").html(rendSobreActivosTop[1]["empresa"]);
-    $("#RSATop5").html(rendSobreActivosTop[0]["empresa"]);
+    $("#RSATop1").html(rendSobreActivosTop[4]["empresa"].toUpperCase());
+    $("#RSATop2").html(rendSobreActivosTop[3]["empresa"].toUpperCase());
+    $("#RSATop3").html(rendSobreActivosTop[2]["empresa"].toUpperCase());
+    $("#RSATop4").html(rendSobreActivosTop[1]["empresa"].toUpperCase());
+    $("#RSATop5").html(rendSobreActivosTop[0]["empresa"].toUpperCase());
 
     var rendSobreCapitalTop = rendSobreCapital.sort(function (a, b) {  return a.valor - b.valor;   });
-    $("#RSCTop1").html(rendSobreCapitalTop[4]["empresa"]);
-    $("#RSCTop2").html(rendSobreCapitalTop[3]["empresa"]);
-    $("#RSCTop3").html(rendSobreCapitalTop[2]["empresa"]);
-    $("#RSCTop4").html(rendSobreCapitalTop[1]["empresa"]);
-    $("#RSCTop5").html(rendSobreCapitalTop[0]["empresa"]);
+    $("#RSCTop1").html(rendSobreCapitalTop[4]["empresa"].toUpperCase());
+    $("#RSCTop2").html(rendSobreCapitalTop[3]["empresa"].toUpperCase());
+    $("#RSCTop3").html(rendSobreCapitalTop[2]["empresa"].toUpperCase());
+    $("#RSCTop4").html(rendSobreCapitalTop[1]["empresa"].toUpperCase());
+    $("#RSCTop5").html(rendSobreCapitalTop[0]["empresa"].toUpperCase());
 
     
 
