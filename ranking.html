@@ -6,6 +6,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/estilos.css" />
@@ -196,7 +198,18 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" >
-                            
+                            <div class="row">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">TOP 5 EMPRESAS</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="containerTop5" style="min-width: 310px; height: 400px; margin: 0 auto; width: 76%;"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <hr>
                             <div class="row">
                                 <div id="modal-bodyRank">
                                     <canvas id="graficaRanking"></canvas>        
@@ -218,7 +231,7 @@
                                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
                                     </div>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="carousel-item active"  data-bs-interval="20000000">
 
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -259,10 +272,10 @@
                                             </div>
                                         </div>
 
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">TOP PRUEBA DEL ACIDO</h5>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">TOP PRUEBA DEL ÁCIDO</h5>
                                                     
                                                 </div>
                                                 <div class="modal-body">
@@ -299,7 +312,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP DEUDA TOTAL</h5>
@@ -339,7 +352,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP ROTACIÓN DEL INTERES GANADO</h5>
@@ -379,7 +392,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP ROTACIÓN DEL INVENTARIO</h5>
@@ -418,7 +431,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP PERIODO PROMEDIO DE COBRANZAS</h5>
@@ -457,7 +470,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP ROTACIÓN DEL ACTIVO TOTAL</h5>
@@ -496,7 +509,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP MARGEN DE UTILIDAD</h5>
@@ -535,7 +548,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP RENDIMIENTO SOBRE LOS ACTIVOS</h5>
@@ -574,7 +587,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="carousel-item"  data-bs-interval="20000000">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="exampleModalLongTitle">TOP RENDIMIENTO SOBRE EL CAPITAL</h5>
@@ -703,7 +716,7 @@
                                 </div>  
                                 <div class="row">   
                                     <div class="col-sm">
-                                        <label for="gastFin1" class="form-label">Gastos financierons</label>
+                                        <label for="gastFin1" class="form-label">Gastos financieros</label>
                                         <input type="number" id="gastFin1" class="form-control" onchange="llenaCampos();">
                                     </div>    
                                     <div class="col-sm">
@@ -790,7 +803,7 @@
                                 </div>  
                                 <div class="row">   
                                     <div class="col-sm">
-                                        <label for="gastFin2" class="form-label">Gastos financierons</label>
+                                        <label for="gastFin2" class="form-label">Gastos financieros</label>
                                         <input type="number" id="gastFin2" class="form-control" onchange="llenaCampos();">
                                     </div>    
                                     <div class="col-sm">
@@ -874,7 +887,7 @@
                                 </div>  
                                 <div class="row">   
                                     <div class="col-sm">
-                                        <label for="gastFin3" class="form-label">Gastos financierons</label>
+                                        <label for="gastFin3" class="form-label">Gastos financieros</label>
                                         <input type="number" id="gastFin3" class="form-control" onchange="llenaCampos();">
                                     </div>    
                                     <div class="col-sm">
@@ -958,7 +971,7 @@
                                 </div>  
                                 <div class="row">   
                                     <div class="col-sm">
-                                        <label for="gastFin4" class="form-label">Gastos financierons</label>
+                                        <label for="gastFin4" class="form-label">Gastos financieros</label>
                                         <input type="number" id="gastFin4" class="form-control" onchange="llenaCampos();">
                                     </div>    
                                     <div class="col-sm">
@@ -1042,7 +1055,7 @@
                                 </div>  
                                 <div class="row">   
                                     <div class="col-sm">
-                                        <label for="gastFin5" class="form-label">Gastos financierons</label>
+                                        <label for="gastFin5" class="form-label">Gastos financieros</label>
                                         <input type="number" id="gastFin5" class="form-control" onchange="llenaCampos();">
                                     </div>    
                                     <div class="col-sm">

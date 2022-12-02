@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.img-container{
+    text-align: center;
+}
 input {
     text-align:center;
 }
